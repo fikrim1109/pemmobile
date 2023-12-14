@@ -1,3 +1,5 @@
+package com.d121211033.movielist.ui.activities.main
+
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
