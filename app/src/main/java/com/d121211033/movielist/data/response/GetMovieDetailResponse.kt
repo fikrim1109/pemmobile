@@ -6,8 +6,8 @@ import kotlinx.serialization.Serializable
 @Serializable
 
 data class GetMovieDetailResponse(
-    @SerialName("id")
-    val id: String,
+    @SerialName("imdbId")
+    val imdbId: String,
     @SerialName("title")
     val title: String,
     @SerialName("description")
@@ -19,7 +19,7 @@ data class GetMovieDetailResponse(
     @SerialName("popularity")
     val popularity: String,
     @SerialName("imdb_rating")
-    val imdb_rating: String,
+    val imdbRating: String,
     @SerialName("rated")
-    val rated: Any,
+    val rated: String,
 )
