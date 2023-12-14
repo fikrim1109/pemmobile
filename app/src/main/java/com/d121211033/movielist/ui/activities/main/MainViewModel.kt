@@ -13,6 +13,11 @@ import com.d121211033.movielist.data.response.GetMovieImageResponse
 
 
 class MainViewModel {
+    val mainUiState: MainActivity.MainUiState
+        get() {
+            TODO()
+        }
+
     class MovieViewModel(private val repository: MovieRepository) : ViewModel() {
         private val _selectedMovieId = MutableLiveData<String>()
 
@@ -32,6 +37,14 @@ class MainViewModel {
             val movieId = _selectedMovieId.value ?: throw IllegalStateException("MovieId not set")
             return repository.getMovieImage(movieId)
         }
+    }
+
+    class Factory {
+        val viewModel: MovieViewModel
+            get() {
+                TODO()
+            }
+
     }
 
 }
