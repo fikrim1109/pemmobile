@@ -7,7 +7,7 @@ import kotlinx.serialization.Serializable
 
 data class GetMovieImageResponse(
     @SerialName("posterUrl")
-    val posterUrl: String,
+    val poster_path: String,
     @SerialName("backdropUrl")
     val backdropUrl: String,
 

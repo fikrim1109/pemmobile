@@ -6,17 +6,16 @@ import kotlinx.serialization.Serializable
 
 @Parcelize
 @Serializable
-data class Movie : Parcelable {
+data class Movie(
+    val poster_path: String,
     val id: String,
     val title: String,
     val releaseDate: String,
     val genres: List<String>,
-    val posterUrl: String,
     val description: String,
     val imdbrating: String,
     val popularity: String,
-    val rated: Any,
+    val rated: String,
     val release_date: String,
-    val year: String,
-
-}
+    val year: String
+) : Parcelable
